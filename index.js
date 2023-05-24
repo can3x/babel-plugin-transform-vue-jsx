@@ -185,7 +185,7 @@ module.exports = function (babel) {
     objs = objs.map(function (o) {
       return o._isSpread ? o : groupProps(o.properties, t)
     })
-
+console.log('objs :>> ', objs);
     if (objs.length === 1) {
       // only one object
       attribs = objs[0]
